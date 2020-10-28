@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+ 
+  background-image: linear-gradient(#FFFFFF, #75a1ce);
+	background-attachment: fixed;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+
+}
+
+
+/* NAV */
+
+
+nav {
+		font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #360bacce;
+}
+li .active:hover  {
+  background-color: rgb(58, 154, 179);
+}
+
+
+
+/* Center website */
+.main {
+  max-width: 95%;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 65px;
+  font-weight: 400;
+  margin: 0;
+  text-shadow: 1px 3px #360bacce;
+}
+
+h3, nav {
+  font-family: 'Space Mono', monospace;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* PADDING BETWEEN COLUMNS */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* 4 COLUMS THAT FLOAT */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+
+
+/*footer*/
+
+
+footer{
+  background-color: #333;
+  color: darkgrey;
+  text-align: center;
+  padding: 5px;
+  
+}
+
+/*SOCIAL*/
+
+.social img{
+  height: 30px;
+  width: 30px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+
+
+  
+}
